@@ -1,0 +1,159 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Red Hat Display;
+}
+
+/* background images เป็นคลื่นๆ */
+
+.bg img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -150px;
+}
+
+@media screen and (max-width: 375px) {
+    /* Specific to this particular image */
+    .bg img {
+        display: none;
+    }
+}
+
+/*จบ background images เป็นคลื่นๆ */
+
+/* กล่องตรงกลางหน้าเพื่อเปลี่ยนแผนบริการ */
+
+.box {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.137);
+    border-radius: 18px;
+    height: 490px;
+    width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-box {
+    content: url('images/illustration-hero.svg');
+    width: 320px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 1;
+}
+
+.content h2 {
+    font-size: 20px;
+}
+
+.content p {
+    color: rgba(128, 128, 128, 0.884);
+    font-size: 13px;
+    padding: 0px 20px;
+    line-height: 1.5;
+}
+
+/* จบกล่องตรงกลางหน้าเพื่อเปลี่ยนแผนบริการ */
+
+/* เริ่มปุ่มกดต่างๆ */
+
+.auuual-plan {
+    background-color: hsla(223, 47%, 23%, 0.041);
+    border-radius: 10px;
+    margin: auto;
+    width: 80%;
+    height: 70px;
+}
+
+.auuual-plan img {
+    content: url('images/icon-music.svg');
+    position: absolute;
+    max-width: 11%;
+    left: 50px;
+    bottom: 138px;
+}
+
+.auuual-plan h4 {
+    font-size: 12px;
+    position: absolute;
+    left: 100px;
+    bottom: 141px;
+}
+
+.auuual-plan p {
+    position: absolute;
+    left: 79px;
+    bottom: 124px;
+}
+
+.auuual-plan a {
+    font-size: 10px;
+    position: absolute;
+    right: 53px;
+    bottom: 136px;
+    color: hsl(244, 100%, 66%);
+    text-decoration: none;
+}
+
+.auuual-plan a:hover {
+    color: hsl(244, 83%, 68%);
+}
+
+.proceed-button {
+    padding: 23px 0px;
+}
+
+.proceed-button button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.137);
+    cursor: pointer;
+}
+
+.proceed-button button:hover {
+    background-color: hsl(244, 83%, 68%);
+}
+
+.proceed-button h5 {
+    margin: auto;
+}
+
+.cancle-button {
+    padding: 8px 0px;
+}
+
+.cancle-button a {
+    font-size: 11px;
+    color: hsl(0, 0%, 47%);
+    text-decoration: none;
+}
+
+.cancle-button a:hover {
+    color: black;
+}
+
+/* จบปุ่มกดต่างๆ */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
